@@ -1,8 +1,24 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
+    const path = window.location.pathname
+    let homeMenuClass
+    let aboutMenuClass
+    let servicesMenuClass
+    let roomsMenuClass
+    let testimoniaMenuClass
+    let contactMenuClass
+
+    window.location.pathname === '/' ? homeMenuClass = 'nav-item nav-link active' : homeMenuClass = 'nav-item nav-link'
+    window.location.pathname === '/about' ? aboutMenuClass = 'nav-item nav-link active' : aboutMenuClass = 'nav-item nav-link'
+    window.location.pathname === '/services' ? servicesMenuClass = 'nav-item nav-link active' : servicesMenuClass = 'nav-item nav-link'
+    window.location.pathname === '/rooms' ? roomsMenuClass = 'nav-item nav-link active' : roomsMenuClass = 'nav-item nav-link'
+    window.location.pathname === '/testimonial' ? testimoniaMenuClass = 'nav-item nav-link active' : testimoniaMenuClass = 'nav-item nav-link'
+    window.location.pathname === '/contact' ? contactMenuClass = 'nav-item nav-link active' : contactMenuClass = 'nav-item nav-link'
+
   return (
     <div class="container-fluid bg-dark px-0">
             <div class="row gx-0">
@@ -42,19 +58,13 @@ const NavBar = () => {
                         </button>
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto py-0">
-                                <a href="index.html" class="nav-item nav-link active">Home</a>
-                                <a href="about.html" class="nav-item nav-link">About</a>
-                                <a href="service.html" class="nav-item nav-link">Services</a>
-                                <a href="room.html" class="nav-item nav-link">Rooms</a>
-                                <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                                    <div class="dropdown-menu rounded-0 m-0">
-                                        <a href="booking.html" class="dropdown-item">Booking</a>
-                                        <a href="team.html" class="dropdown-item">Our Team</a>
-                                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    </div>
-                                </div>
-                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                                <Link class={homeMenuClass} to="/">Home</Link>
+                                <Link class={aboutMenuClass} to="/about">About</Link>
+                                <Link class={servicesMenuClass} to="/services">Services</Link>
+                                <Link class={roomsMenuClass} to="/rooms">Rooms</Link>
+                                <Link class={testimoniaMenuClass} to="/testimonial">Testimonial</Link>
+                                <Link class={contactMenuClass} to="/contact">Contact</Link>
+                                
                             </div>
                         </div>
                     </nav>
