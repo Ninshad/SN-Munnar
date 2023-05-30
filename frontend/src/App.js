@@ -6,6 +6,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Rooms from './Pages/Rooms';
+import Testimonial from './Pages/Testimonial';
 
 function App() {
   return (
@@ -16,10 +17,12 @@ function App() {
 
     <Router>
       <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/rooms" element={<Rooms />} />
+      <Route path="/" element={<Home/>} />
+      <Route path="/about" element={<About/>} />
+      <Route path="/rooms" element={<Rooms/>} />
+      <Route path="/testimonial" element={<Testimonial/>} />
+      <Route path="/contact" element={<Contact/>} />
+      
       </Routes>
     </Router>
     </>

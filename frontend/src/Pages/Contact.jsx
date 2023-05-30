@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Layout from '../Components/Layout'
 
 const Contact = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
   return (
     <Layout>
-        <div class="container-fluid page-header mb-5 p-0"  style={{backgroundImage: "url('/Images/about/about1-crop.jpeg')"}}>
+        <div class="container-fluid page-header mb-5 p-0"  style={{backgroundImage: "url('/Images/front/sn-front.jpg')"}}>
             <div class="container-fluid page-header-inner contact-py-5">
                 <div class="container text-center pb-5">
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Contact</h1>
@@ -46,16 +50,19 @@ const Contact = () => {
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
                             <div contact-phone>
                             <h6 class="section-title text-start text-primary text-uppercase">Phone</h6> <br/>
-                                <i class="fa fa-phone-alt text-primary me-2"></i> 123456 <br/>
+                                <i class="fa fa-phone-alt text-primary me-2"></i>04865 230212<br/>&nbsp; &nbsp; &nbsp;04865 230312<br/>
+                                <i class="fas fa-mobile-alt text-primary me-2"></i>&nbsp;8075190680<br/>&nbsp; &nbsp; &nbsp;9048872111
                             </div>
                             <div className='contact-email'>
                             <h6 class="section-title text-start text-primary text-uppercase">Email</h6> <br/>
-                                <p><i class="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p> <br/>
+                                <p><i class="fa fa-envelope-open text-primary me-2"></i>team@snmunnar.com</p> <br/>
                             </div>
                             <div className='contact-adress'>
                             <h6 class="section-title text-start text-primary text-uppercase">Adress</h6> <br/>
-                                <i class="fa fa-map-marker-alt text-primary me-2"></i> abc <br/>
-                                &nbsp; &nbsp; &nbsp;def <br/>
+                                <i class="fa fa-map-marker-alt text-primary me-2"></i> Hotel SN <br/>  &nbsp; &nbsp; &nbsp;Kanan Devan Hills <br/>
+                                &nbsp; &nbsp; &nbsp;A.M. Road, Moolakadai,<br/>
+                                &nbsp; &nbsp; &nbsp;Munnar, Idukki, Kerala,<br/>
+                                &nbsp; &nbsp; &nbsp;S.India - 685612 <br/>
                             </div>
                         
                         
@@ -100,6 +107,8 @@ const Contact = () => {
                 </div>
             </div>
         </div>
+
+        <a href="https://wa.me/8075190680" class="btn btn-lg btn-primary btn-lg-square back-to-top-other-pages whatsapp"><i class="fab fa-whatsapp"></i></a>
     </Layout>
   )
 }

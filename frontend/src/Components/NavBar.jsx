@@ -23,20 +23,22 @@ const NavBar = () => {
     <div class="container-fluid bg-dark px-0">
             <div class="row gx-0">
                 <div class="col-lg-3 bg-dark d-none d-lg-block">
-                    <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                        <h1 class="m-0 text-primary text-uppercase">SN Munnar</h1>
-                    </a>
+                <Link className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center" to="/">
+                <h1 class="m-0 text-primary text-uppercase">SN Munnar</h1>
+                </Link>
                 </div>
                 <div class="col-lg-9">
                     <div class="row gx-0 bg-white d-none d-lg-flex">
                         <div class="col-lg-7 px-5 text-start">
                             <div class="h-100 d-inline-flex align-items-center py-2 me-4">
                                 <i class="fa fa-envelope text-primary me-2"></i>
-                                <p class="mb-0">info@example.com</p>
+                                <p class="mb-0">team@snmunnar.com</p>
                             </div>
                             <div class="h-100 d-inline-flex align-items-center py-2">
                                 <i class="fa fa-phone-alt text-primary me-2"></i>
-                                <p class="mb-0">+012 345 6789</p>
+                                <p class="mb-0">04865 230212</p>&nbsp; &nbsp; &nbsp;
+                                <i class="fa fa-phone-alt text-primary me-2"></i>
+                                <p class="mb-0">04865 230312</p>
                             </div>
                         </div>
                         <div class="col-lg-5 px-5 text-end">
@@ -60,7 +62,6 @@ const NavBar = () => {
                             <div class="navbar-nav mr-auto py-0">
                                 <Link class={homeMenuClass} to="/">Home</Link>
                                 <Link class={aboutMenuClass} to="/about">About</Link>
-                                <Link class={servicesMenuClass} to="/services">Services</Link>
                                 <Link class={roomsMenuClass} to="/rooms">Rooms</Link>
                                 <Link class={testimoniaMenuClass} to="/testimonial">Testimonial</Link>
                                 <Link class={contactMenuClass} to="/contact">Contact</Link>

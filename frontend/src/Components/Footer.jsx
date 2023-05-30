@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -14,9 +15,14 @@ const Footer = () => {
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> Hotel SN <br/>  &nbsp; &nbsp; &nbsp; &nbsp;Kanan Devan Hills <br/>
+                        &nbsp; &nbsp; &nbsp; &nbsp;A.M. Road, Moolakadai,<br/>
+                        &nbsp; &nbsp; &nbsp; &nbsp;Munnar, Idukki, Kerala,<br/>
+                        &nbsp; &nbsp; &nbsp; &nbsp;S.India - 685612 <br/></p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>04865 230212<br/>&nbsp; &nbsp; &nbsp; &nbsp;04865 230312<br/></p>
+                        <p class="mb-2"><i class="fas fa-mobile-alt me-3"></i>&nbsp;8075190680<br/>&nbsp; &nbsp; &nbsp; &nbsp;9048872111<br/></p>
+                        
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>team@snmunnar.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -28,19 +34,13 @@ const Footer = () => {
                         <div class="row gy-5 g-4">
                             <div class="col-md-6">
                                 <h6 class="section-title text-start text-primary text-uppercase mb-4">Company</h6>
-                                <a class="btn btn-link" href="">About Us</a>
-                                <a class="btn btn-link" href="">Contact Us</a>
-                                <a class="btn btn-link" href="">Privacy Policy</a>
-                                <a class="btn btn-link" href="">Terms & Condition</a>
-                                <a class="btn btn-link" href="">Support</a>
+                                <Link class="btn btn-link" to="/about">About Us</Link>
+                                <Link class="btn btn-link" to="/contact">Contact Us</Link>
                             </div>
                             <div class="col-md-6">
                                 <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
                                 <a class="btn btn-link" href="">Food & Restaurant</a>
-                                <a class="btn btn-link" href="">Spa & Fitness</a>
-                                <a class="btn btn-link" href="">Sports & Gaming</a>
-                                <a class="btn btn-link" href="">Event & Party</a>
-                                <a class="btn btn-link" href="">GYM & Yoga</a>
+                                <Link class="btn btn-link" to="/rooms">Rooms</Link>
                             </div>
                         </div>
                     </div>
@@ -55,10 +55,10 @@ const Footer = () => {
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
+                                <Link to="/">Home</Link>
+                                <a href="/contact">Cookies</a>
+                                <a href="/contact">Help</a>
+                                <a href="/contact">FQAs</a>
                             </div>
                         </div>
                     </div>

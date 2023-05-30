@@ -4615,7 +4615,9 @@ fieldset:disabled .btn {
 
   .navbar-expand-lg .navbar-collapse {
       display: flex !important;
-      flex-basis: auto
+      flex-basis: auto;
+      justify-content: end !important;
+      
   }
 
   .navbar-expand-lg .navbar-toggler {
@@ -12577,6 +12579,13 @@ fieldset:disabled .btn {
   z-index: 99;
 }
 
+.back-to-top-other-pages {
+  position: fixed;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+}
+
 
 /*** Spinner ***/
 #spinner {
@@ -12787,7 +12796,7 @@ fieldset:disabled .btn {
   position: relative;
   height: 100%;
   min-height: 500px;
-  background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(.././public/video.jpg);
+  background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url('.././public/Images/rooms/thumb/r8.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13136,3 +13145,24 @@ img.img-fluid-about.rounded.w-75.wow.zoomIn {
   position: relative;
   top: 30px;
 }
+
+a.btn.btn-lg.btn-primary.btn-lg-square.back-to-top {
+  border-radius: 50%;
+}
+
+a.btn.btn-lg.btn-primary.btn-lg-square.back-to-top.whatsapp {
+  background-color: green;
+  position: fixed;
+  bottom: 100px;
+  border: none;
+  border-radius: 50%;
+}
+
+a.btn.btn-lg.btn-primary.btn-lg-square.back-to-top-other-pages.whatsapp {
+  background-color: green;
+  position: fixed;
+  bottom: 30px;
+  border: none;
+  border-radius: 50%;
+}
+
