@@ -49,10 +49,12 @@ const Footer = () => {
             <div class="container">
                 <div class="copyright">
                     <div class="row">
+                        <Link to={'https://ninshad.tech/'}>
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                             &copy; {currentYear} Ninshad M. All Right Reserved. 
 							
                         </div>
+                        </Link>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
                                 <Link to="/">Home</Link>
